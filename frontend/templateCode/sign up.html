@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safebboda Rider Onboard</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="safeboda11.png" alt="safeboda logo">
+    </div>
+    <div class="login-page">
+               <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="First name"/>
+                <input type="text" placeholder="Last name"/>
+                <input type="text" placeholder="User name"/>
+                <input type="Password" placeholder="Password"/>
+                <input type="Password"  placeholder="Confirm Password"/>
+                <input type="text" placeholder="Email Address"/>
+                <button>Create Account</button>
+                <p class="message">Already Registered?<a href="#">Login</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="User name"/>
+                <input type="Password" placeholder="Password"/>
+                <button>Login</button>
+                <p class="message">Not Registered?<a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $('.message a').click(function()
+        {$('form').animate({height:"toggle", opacity: "toggle"},"slow")});
+    </script>
+</body>
+</html>

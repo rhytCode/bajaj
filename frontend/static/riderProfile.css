@@ -1,0 +1,84 @@
+body{
+    color: rgba(240, 131, 8, 0.863);
+    font-family: sans-serif;
+        background-color: rgba(240, 131, 8, 0.863);
+    background-size: cover;
+}
+.Profile{
+    background-color: rgba(240, 131, 8, 0.863);
+    color: #ffff;
+
+}
+h6{
+    color:rgb(17, 81, 83);
+}
+input{
+    float: right;
+    padding: 10px;
+    margin-top: 50px;
+}
+.status{
+    color:rgb(17, 81, 83);
+}
+img {
+    /*comment out float ?*/
+    float: left;
+}
+.names{
+    padding:20px;
+}
+.status{
+    float:right;
+}
+.details{
+    padding: 20px;
+}
+.AGE{
+    float: left;
+    width:33.3%;
+}
+.DOB{
+    float: left;
+    width:33.3%;
+}
+.NIN{
+    float: left;
+    width:33.3%;
+}
+.DOR{
+    float: left;
+    width:33.3%;
+}
+.Address{
+    float: left;
+    width:33.3%;
+}
+.referal{
+    float: left;
+    width:33.3%;
+}
+.nextOfKin{
+    float: left;
+    width:33.3%;
+}
+.contact{
+    float: left;
+    width:33.3%;
+}
+.phoneNumber{
+    float: left;
+    width:33.3%;
+}
+button:hover, button:active {
+    background: rgb(1, 20, 27);
+}
+button{
+    font-family:sans-serif;
+    outline: 2;
+    background:rgba(15, 70, 104, 0.863);
+    box-sizing: border-box;
+    font-size: 15px;
+    text-decoration-color: rgb(240, 172, 26);
+    cursor: pointer;
+    color:#ffff;
+};
