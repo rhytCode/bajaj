@@ -38,16 +38,16 @@ https://marvelapp.com/4gc6i03
 * User settings such as change password
 
 ## Technologies Used
-•	HTML – Create the webpage
-•	CSS & Bootstrap – Design & style the user interface
-•	Javascript – Create interactive elements for the user experience
-•	Express – Create the server and access node modules
-•	Node.JS – Test responsiveness and communication of the server
-•	MongoDB – Create the database
-•	MongoDB Compass – Visualize the database
-•	Mongoose – Translate and represents objects in the MongoDB library 
-•	Postman – Test API requests
-•	Github – Collaboration, sharing & storing code between team members
+*	HTML – Create the webpage
+*	CSS & Bootstrap – Design & style the user interface
+*	Javascript – Create interactive elements for the user experience
+*	Express – Create the server and access node modules
+*	Node.JS – Test responsiveness and communication of the server
+*	MongoDB – Create the database
+*	MongoDB Compass – Visualize the database
+*	Mongoose – Translate and represents objects in the MongoDB library 
+*	Postman – Test API requests
+*	Github – Collaboration, sharing & storing code between team members
 
 ## Getting Started
 ...
