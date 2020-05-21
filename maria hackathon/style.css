@@ -1,0 +1,167 @@
+.b1{
+
+    width: 1200px;
+    height: 800px;
+    padding: 50px;
+    background-color: orange;
+    margin: auto;
+    border-radius: 10px;
+}
+.b2{
+
+    background-color: white;
+    width: 650px;
+    height: 720px;
+    float: left;
+    border-radius: 20px;
+}
+.b3{
+
+    background-color: white;
+    width: 430px;
+    height: 720px;
+    float: left;
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+.b4{
+    background-color:greenyellow;
+    width: 380px;
+    height: 80px;
+   margin-top: 30;
+    margin-left: 20px;
+    padding-bottom: 3cm;
+    margin-bottom: 10px;
+    
+}
+.b5
+{  background-color:pink;
+    width: 400px;
+    height: 80px;
+   margin-top: 100;
+    margin-left: 20px;
+    
+    margin-bottom: 10px;
+
+
+}
+.b6{
+    background-color:red;
+    width: 400px;
+    height: 300px;
+   margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    
+
+    
+
+}
+.btn {
+    display: rounded;
+    width: 100%;
+    border: none;
+    background-color: royalblue;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .pie{
+
+    background-color: white;
+    width: 650px;
+    height: 400px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  .key{
+    background-color:white;
+    width: 650px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+  }
+  .smallicon1{
+    background-color:yellow;
+    width: 300px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    float: left;
+  }
+  .smallicon2{
+    background-color:yellow;
+    width: 300px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    float: left;
+  }
+  .smallicon3{
+    background-color:yellow;
+    width: 300px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    float: left;
+  }
+  .date{
+    background-color:yellow;
+    width: 200px;
+    height: 170px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    margin-left: 20;
+    float: left;
+  }
+  .s{
+    background-color:green;
+    width: 200px;
+    height: 170px;
+    border-radius: 1px;
+  
+    float: right;
+  }
+  .s1{
+    background-color:white;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    margin-left: 20;
+    float: left;
+  }
+  .s2{
+    background-color:white;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    margin-left: 20;
+    float: left;
+  }
+  .s3
+  {
+   
+    background-color:blue;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    margin-left: 20;
+    float: left;
+  }
+  .s4{
+   
+    background-color:red;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    margin-left: 20;
+    float: left;
+  }
+  

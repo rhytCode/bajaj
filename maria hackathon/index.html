@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Download Reports Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <body>
+        <div class="b1">
+            <div class="b2">
+              <div class="pie"><div id="piechart">
+
+                <div id="piechart"></div>
+                
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                
+                <script type="text/javascript">
+                // Load google charts
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                
+                // Draw the chart and set the chart values
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                  ['Task', 'Hours per Day'],
+                  
+                  ['training', 3],
+                  ['registered', 6.6],
+                  ['Ready to be activated', 4]
+                ]);
+                
+                  // Optional; add a title and set the width and height of the chart
+                  var options = {'title':'', 'width':650, 'height':400};
+                
+                  // Display the chart inside the <div> element with id="piechart"
+                  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                  chart.draw(data, options);
+                }
+                </script>
+                </div></div> 
+              <div class="key"><div class="smallicon1"></div>
+              <div class="smallicon2"></div>
+              <div class="smallicon3"></div></div>
+              
+
+
+              </div>
+              <div class="b3">
+                <div class="b4">
+                    
+                    <div class="b4">
+                        <button type="button" class="btn btn-secondary btn-round">Register a Rider</button> </div> 
+              </div> 
+              
+              <div class="b5">  
+
+                <button type="button" class="btn btn-secondary btn-round">View Rider Status</button>
+</div>
+
+              <div class="b6">
+               
+                <button type="button" class="btn btn-secondary btn-round">total riders in the system</button>
+                <div class="s">
+                    <div class="ss"> 
+                <div class="date"><div class="s1">Date:</div>
+            <div class="s2">DD/YY/MM</div>
+            <button type="button" class="btn btn-secondary btn-round">search by date</button> 
+            
+            </div>
+
+               
+                    
+                 </div>   
+                </div>
+                </div>
+              <div class="b7"><button type="button" class="btn btn-secondary btn-round">Download Reports</button></div>
+                         
+
+            </div>     
+        
+    </body>
+</html>
+
+
+
