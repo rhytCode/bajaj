@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rider Registration <Form></Form></title>
+    <link rel="stylesheet" href="riderRegistration.css">
+</head>
+<body>
+    <div class="registrationForm">
+        <div class="Logo">
+            <img src="logo.png" alt="logo"><br>
+        </div>
+        <div class= "returnButtons">
+            <button>Rider List</button>
+            <button>Dashboard</button><br>
+        </div>
+        <br><br><br>
+        <form id="regForm" action=""></form>
+        <h1>Register Rider Details</h1>
+        <div class="tab" id="page1">
+                <input type="text" name="Fname" id="name" placeholder="First Name" oninput="this.className = ''"><br><br>
+                <input type="text" name="lname" id="name" placeholder="Last Name " oninput="this.className = ''"><br><br>
+                <input type="number" name="Dob" id="Age" placeholder="Age" oninput="this.className = ''"/><br><br>
+                <input type="text|number" name="NIN" id="id" placeholder="National identification Number(NIN)"oninput="this.className = ''"><br><br>
+                <input type="number" name="MNum" id="num" placeholder="Phone Number" oninput="this.className = ''"><br><br>
+                <input type="text" name="DOR" id="name" placeholder="Date of recruitment" oninput="this.className = ''" ><br><br>
+                <div class="Navigate">
+                <button type="button" id="nextBtn" class="Nextpage">Next</button><br><br>
+            </div>
+        </div>
+        <div class="tab" id="page2" display="none">
+                       <input type="text" name="Bodastage" id="stage" placeholder="Recruitment Station/Address"oninput="this.className = ''"><br><br>
+            <input type="number" name="Referee"  placeholder="Referal Name"oninput="this.className = ''"><br><br>
+            <input type="text|number" name="NextOfKin" placeholder="Next of Kin"oninput="this.className = ''"><br><br>
+            <input type="text" name="contact" placeholder="Next of Kin's contact" oninput="this.className = ''" ><br><br>
+            <input type="text" name="lname" id="name" placeholder="Email Address" oninput="this.className = ''"><br><br>
+            <input type="photo" name="Dob" id="Photo" placeholder="Upload Photo" oninput="this.className = ''"><br><br>
+            <div class="Navigate">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)"class="previouspage">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)"class="Nextpage">submit</button><br><br>   
+        </div>
+        
+           
+                
+            </div><br><br>
+                </div>
+                                 
+                  </form>
+        <div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
