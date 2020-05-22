@@ -17,9 +17,6 @@
                 <button>Log out</button>
             </div>
         </div><br><br>
-        <br><br>
-        <br><br>
-        <br><br>
         <div class="box2">
             <div class="graph" id="chart">
                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -33,20 +30,20 @@
                 function drawChart() {
                   var data = google.visualization.arrayToDataTable([
                   ['', ''],
-                  [' In training', 8],
                   ['Registered', 68],
-                  ['Ready for Activation', 2]
+                  [' In training', 8],
+                  ['Activated', 2]
                 ]);
                 
                   // Optional; add a title and set the width and height of the chart
-                  var options = {'title':'onbording process', 'position':'left','width':500, 'height':300, 'colors':['orange','silver','gold']};
+                  var options = {'title':'onbording stage', 'position':'left','width':400, 'height':300, 'colors':['orange','silver','gold']};
                 
                   // Display the chart inside the <div> element with id="chart"
                   var chart = new google.visualization.PieChart(document.getElementById('chart'));
                   chart.draw(data, options);
                 }
                 </script>
-            </div><br>
+            </div>
             <div class="Dashboard">
                 <button> Register a Rider </button>
                 <button>View Rider status</button>
