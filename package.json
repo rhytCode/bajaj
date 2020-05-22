@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rhytCode/bajaj/issues"
   },
-  "homepage": "https://github.com/rhytCode/bajaj#readme"
+  "homepage": "https://github.com/rhytCode/bajaj#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
 }
