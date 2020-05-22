@@ -30,6 +30,10 @@ router.post("/users/login", async (req,res) => {
 
 });
 
+// Comment from Liz - Should we added username & staffId to router.post function and remove email as part of login variables needed ?
+//     eg. const {username, staffId, password} = req.body;
+//     const user = await User.findByCredentials(username, staffId, password);
+
 
 // view user profile
 router.get("/users/profile", auth, (req,res)=>{
