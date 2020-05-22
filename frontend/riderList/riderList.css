@@ -1,0 +1,59 @@
+body{
+    background-color:rgba(255, 136, 0, 0.911);
+}
+
+.marginBox {
+    width: 1200px;
+    height: 800px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.on-board-form{
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.on-board-form a {
+    background:rgba(255, 136, 0, 0.911);
+    float: right;
+    margin-left: 10px;
+}
+
+.tableRows a {
+    background:rgba(24, 72, 87, 1);
+    float: right;
+}
+
+.table-title{
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.table-title h3 {
+    color: rgba(24, 72, 87, 1);
+    font-family: "Robboto", sans-serif;
+    font-weight: bold;
+}
+
+.tableHead {
+    background-color: rgba(24, 72, 87, 1);
+    color: white;
+    text-align: center;
+}
+
+.tableRows {
+    text-align: center;
+}
+
+.table-details{
+    width: 1000px;
+    height: 450px;
+    background-color:white;
+    border-radius: 20px;
+    margin: 25px;
+}
+
