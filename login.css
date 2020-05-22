@@ -1,0 +1,35 @@
+body {
+    background-image: url("BGimage.jpg");
+    height: 100 vh;
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat; 
+    /* how to make the bg img responsive ? */
+}
+
+.container {
+    width:400px;
+    padding:10% 0 0;
+    margin: auto;
+}
+
+.logo {
+width: 400px;
+margin: 0 auto;
+background-color:rgba(24, 72, 87, 0.794);
+/* background-color: #2c5265d5; */
+}
+
+.orangeBox {
+    background-color: rgba(255, 136, 0, 0.794);
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.orangeBox a {
+    background:rgba(24, 72, 87, 1);
+}
+.orangeBox button {
+background:rgba(24, 72, 87, 1);
+}
