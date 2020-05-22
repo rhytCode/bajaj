@@ -1,0 +1,84 @@
+body{
+    
+    background-color: orange;
+        
+}
+.logo img{
+    float: left;
+    width:10%;
+    padding:15px;
+}
+.logout button{
+    background-color: orange;
+    color:#ffff;
+    float:right;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 10%;
+}
+.Dashboard button{
+    font-family:sans-serif;
+    outline: 2;
+    background:rgba(15, 70, 104, 0.863);
+    border-radius: 5px;
+    width: 100%;
+    margin:0 0 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-decoration-color: rgb(240, 172, 26);
+    cursor: pointer;
+    color:#ffff;
+}
+.Main{
+    background-color: #ffff;
+    Z-index: 5;
+    max-width: 85%;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.Dashboard button:hover, .Dashboard button:active{
+    background: #03374b;
+}
+.graph{
+    margin: auto;
+    box-sizing: border-box;
+    width:40%;
+}
+
+
+.Dashboard{
+   padding-top: 5px;
+    margin: auto;
+    box-sizing: border-box;
+    width: fit-content;
+    position: right;
+    
+
+
+}
+.search{
+    background-color: #ffff;
+    border:solid 1px;
+    border-color:  rgb(3, 55, 75);
+    width: fit-content;
+    display: flex;
+    margin: auto;
+}
+.search button{
+    padding:5px;
+    border-radius: 10px;
+}
+
+.card{
+   
+    width:50%;
+}
