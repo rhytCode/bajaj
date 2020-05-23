@@ -27,9 +27,7 @@ background-color:rgba(24, 72, 87, 0.794);
     padding-left: 40px;
     padding-right: 40px;
 }
-.orangeBox a {
-    background:rgba(24, 72, 87, 1);
-}
+
 .orangeBox button {
 background:rgba(24, 72, 87, 1);
 }

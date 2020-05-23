@@ -20,8 +20,8 @@ res.status(400).send({error});
 
 //Login User
 router.post("/users/login", async (req,res) => {
-    const {email,password} = req.body;
-    const user = await User.findByCredentials(email,password);
+    const {name,password,role} = req.body;
+    const user = await User.findByCredentials(name,password,role);
     if (user.error) {
          return res.status(400).send({error: user.error});
     }

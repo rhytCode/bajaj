@@ -5,14 +5,12 @@ const login = [];
 loginBtn.addEventListener ("click", (e) => {
     e.preventDefault() 
 function validatationEvent() {
-var username = document.getElementById("username").value;
+var name = document.getElementById("name").value;
 var password = document.getElementById("password").value;
-var staffId = document.getElementById("staffId").value; 
-// Should I change "staffId" to "role" to match userSchema variables ?
-// Do we really need the email value in the login form ?
+var role = document.getElementById("role").value; 
 
 // If user data matches, redirect to dahboard else send alert
-if (username == " " && password == " " && staffId == " ") {
+if (name == " " && password == " " && role == " ") {
     console.log("login user data match");
     window.location = "dashboard.html"; 
 return true;}
