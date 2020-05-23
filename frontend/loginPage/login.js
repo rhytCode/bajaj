@@ -1,30 +1,19 @@
-const url = "mongodb://localhost:27017/authData";
-
-// When a user clicks login button, capture user data and validate it
+// Login User - trial 1
 const login = [];
 loginBtn.addEventListener ("click", (e) => {
     e.preventDefault() 
-function validatationEvent() {
-var name = document.getElementById("name").value;
-var password = document.getElementById("password").value;
-var role = document.getElementById("role").value; 
-
-// If user data matches, redirect to dahboard else send alert
-if (name == " " && password == " " && role == " ") {
-    console.log("login user data match");
-    window.location = "dashboard.html"; 
-return true;}
-else {
-alert ("Invalid username or password, please try again");
-return false;
-}
-}});
-
-// Add remember me function ...
-
-// When a user clicks Register a rider button redirect them to rider registration
-const regAriderBtn = [];
-linkToReg.addEventListener ("click", (e) => {
-    e.preventDefault() 
-    window.location = "dashboard.html";
-});
+{
+router.post("/users/login", async (req,res) => {
+    const {name,password,role} = req.body;
+    const user = await User.findByCredentials(name,password,role);
+    if (name == " " && password == " " && role == " ")
+    {   const token = await user.generateAuthToken() 
+        console.log("Logged in successfully");
+        window.location = "dashboard.html"; 
+    return true;
+    } else {
+        (user.error)
+        alert ("Invalid username or password");
+        return false;
+    }
+}}});

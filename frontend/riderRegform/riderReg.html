@@ -13,12 +13,12 @@
 
 <body>
   <div class="marginBox">
-    <div class="registrationForm">
+      <div class="registrationForm">
         <div class="row">
             <img src="https://safeboda.com/ng/media/vertical_opengraph_logo.png" alt="orange logo" style="margin-left: 30px; padding: 10px; width: 80px; height: 80px;">
           
             <div class= "navigate">
-              <a href="file:///Users/lizk/Desktop/safebodaFrontend/riderList/riderList.html" class="btn btn-secondary" role="button"> View Riders List</a>
+              <a href="/frontend/riderList/riderList.html" class="btn btn-secondary" role="button"> View Riders List</a>
               <a href="#" class="btn btn-secondary"> Dashboard </a>
             </div>
           
@@ -27,51 +27,39 @@
         <h3>Register Rider Details</h3>
 
         <div>
-            <form id="regForm" action="">
-        
-                <!-- One "tab" for each step in the form: -->
-                <div class="Tab">
-                  <p></p><input placeholder="First Name..." oninput="this.className = ''"></p>
-                  <p><input placeholder="Last Name..." oninput="this.className = ''"></p>
-                  <p><input placeholder="Age..." oninput="this.className = ''"></p>
-                  <p><input placeholder="National identification Number (NIN)..." oninput="this.className = ''"></p>
-                  <p><input placeholder="Phone number..." oninput="this.className = ''"></p>
-                </div>
-                
-                <div class="tab">
-                  <p><input placeholder="Boda Stage Address..." oninput="this.className = ''"></p>
-                  <p><input placeholder="Recruitment Station/Address..." oninput="this.className = ''"></p>
-                  <p><input placeholder="Referal Name..." oninput="this.className = ''"></p>
-                  <p><input placeholder="Recruitment Date..." oninput="this.className = ''"></p>
-                </div>
-                
-                <div class="tab">
-                  <p><input placeholder="Next of Kin" oninput="this.className = ''"></p>
-                  <p><input placeholder="Next of Kin's contact" oninput="this.className = ''"></p>
-                  <p><input placeholder="Email" oninput="this.className = ''"></p>
-                  <p><input placeholder="Upload Photo" oninput="this.className = ''"></p>
-                </div>
-                
-                <div style="overflow:auto;">
-                  <div class="nextBtn" style="float:right;">
-                    <button type="button" class="btn btn-secondary" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                    <button type="button" class="btn btn-secondary" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          
+          <form>
+            <div class="form-group">
+                <input placeholder="First Name..." class="form-control" type="text" id="inputFname">
+                <input placeholder="Last Name..." class="form-control" type="text" id="inputLname">
+                <input placeholder="Age..." class="form-control" type="number" id="age">
+                <input placeholder="National identification Number (NIN)..." class="form-control" type="text" id="NIN">
+                <input placeholder="Boda Stage Address..." class="form-control" type="text" id="bodaStage">
+                <input placeholder="Recruitment Station/Address..." class="form-control" type="text" id="recruitmentAddress">
+                <input placeholder="Email..." class="form-control" type="email" id="email">
+                <input placeholder="Phone Number..." class="form-control" type="tel" id="phone">
+                  <div class="form-inline mx-auto" style="width: 80%;">
+                    <label for="recruitmentDate" class="col-md-3"><b>Recruitment Date :</b></label>
+                    <input placeholder="Recruitment Date..." class="mx-sm-1 form-control" type="date" id="recruitmentDate">
                   </div>
+                <input placeholder="Referal Name..." class="form-control" type="text" id="referal">
+                <input placeholder="Next of Kin..." class="form-control" type="text" id="kinName">
+                <input placeholder="Next of Kin's contact..." class="form-control" type="text" id="kinContact">
+                  <div class="custom-file" style="width: 80%;">
+                    <input type="file" class="custom-file-input" id="uploadPhoto">
+                    <label class="custom-file-label" for="uploadPhoto"> Upload Photo </label>
+                  </div>
+
+                <div class="submitBtn">
+                  <button type="submit" class="btn btn-primary btn-lg btn-block"> Submit </button>
                 </div>
-                
-                <!-- Circles which indicates the steps of the form: -->
-                <div style="text-align:center;margin-top:40px;">
-                  <span class="step"></span>
-                  <span class="step"></span>
-                  <span class="step"></span>
-                  <span class="step"></span>
-                </div>
-                
-            </form>
+          </form>
+
         </div>
-    </div>
+      </div>
 
   </div>
+
     <script src = "riderReg.js"></script>
 
 </body>

@@ -18,6 +18,7 @@ res.status(400).send({error});
 }
 });
 
+
 //Login User
 router.post("/users/login", async (req,res) => {
     const {name,password,role} = req.body;
@@ -40,5 +41,19 @@ router.get("/users/profile", auth, (req,res)=>{
     res.status(200)
     .send(req.user);
 });
+
+// Add rider resgistration data to database
+router.post("/rider/register", async (req, res) =>{
+    const riderData = req.body
+    try{
+        const newRider = new rider(riderData);
+        await newRider.save();
+        res
+        .status(201)
+        .send({ message: "Rider rigestered successfully", rider: newRider})
+    } catch (error){
+    res.status(400).send({error});
+    }
+    });
 
 module.exports = router;
