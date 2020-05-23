@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Download Reports Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./Dashboard.css">
+    </head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <body>
+<div class="big1">
+<div class="big2">
+<div class="header">
+  <div class="logo"><div>
+  <img src="./SafeBodaLogo1.png" alt="SafeBodaLogo">
+  </div>
+
+  </div>  
+  <div class="logout"><button class="button">logout</button></div>
+</div>
+<div class="side1">
+<div class="pie"><div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['', ''],
+  [' In training', 8],
+  ['Registered', 6.8],
+  ['Ready for Activation', 2]
+]);
+
+  var options = {'title':'ONBOARDING PROCESS', 
+  'width':530,
+   'height':400,
+   is3D: true,
+   colors:['#0080ff','green','#ffa500']
+  
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script></div>
+</div>
+<div class="side2"><div  class="r">
+    <button type="button" class="btn btn-secondary btn-round">Register a Rider</button><br><br>
+    <button type="button" class="btn btn-secondary btn-round">view Rider Status</button><br><br>
+    <div><button type="button" class="btn btn-secondary btn-round">total riders in the system</button> 
+        <div class="search">
+        <div class="sd">Date:<br>
+            DD/YY/MM<br>
+            <button type="button" class="btn btn-secondary btn-round">search by date</button> <br>
+            </div>
+        <div class="wd">From :<br>
+            To :<br>
+            <button type="button" class="btn btn-secondary btn-round">search by week</button><br><br>
+        </div>         
+            <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Search by User</button><br><br>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.by User." id="myInput" onkeyup="filterFunction()">
+              <a href="#Kagimu Micheal">Kagimu Micheal</a>
+              <a href="#Dan Base">Dan Base</a>
+              <a href="#Richard Peter">Richard Peter</a>
+              <script>
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+              
+              function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                  txtValue = a[i].textContent || a[i].innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                  } else {
+                    a[i].style.display = "none";
+                  }
+                }
+              }
+              </script>
+        </div>
+        </div>
+    </div><br><br><br><br>
+<br><br><br><br><br>
+<button type="button" class="btn btn-secondary btn-round">Download Reports</button><br>
+
+    </body>
+    </html>

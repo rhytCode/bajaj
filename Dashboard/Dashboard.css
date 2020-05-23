@@ -1,0 +1,174 @@
+.big1{
+
+    width: 1200px;
+    height: 700px;
+    padding: 50px;
+    background-color: orange;
+    margin: auto;
+    border-radius: 10px;
+}
+.big2{
+
+    background-color: white;
+    width: 960px;
+    height:610px;
+    border-radius: 20px;
+    margin: auto;
+}
+.header
+{
+    background-color:white;
+    width: 960px;
+    height: 100px;
+    border-radius: 10px;
+    margin: auto;
+}
+img{
+    width: 10%;
+    float: left ;
+}
+.logout button{
+    background-color:orange;
+    width: 20%;
+    float: right ;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+.side1
+{
+      background-color: white;
+        width: 590;
+        height: 300px;
+        float: left;
+        margin: auto;
+        margin-bottom: 50px;
+
+    
+}.side2{
+    
+    background-color: white;
+    width: 610;
+    height: 500px;
+    float: left;
+    margin:auto;
+    margin-bottom: 50px;
+
+
+}
+.pie
+{
+
+    background-color: white;
+    width: 540px;
+    height: 400px;
+    margin-top: 10px;
+    
+
+}
+.search{
+    width:fit-content;
+    margin:auto;
+    float: left;
+}
+.date
+{
+
+    background-color: white;
+    margin: Auto;
+    float: left;
+    
+}
+.system
+{
+
+    background-color: white;
+    float: left;
+    margin: Auto;
+    
+}
+.btn {
+    display: rounded;
+    width: 100%;
+    border: none;
+    background-color:  rgb(76, 116, 175);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+.sd{
+    background-color: white;
+    float: left;
+
+
+}
+.wd{
+    background-color: white;
+ 
+}
+
+.dropbtn {
+    background-color: rgb(76, 116, 175);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e538e;
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 4px 2px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 2px 2px 2px 2px;
+    border: none;
+    
+  }
+  
+  #myInput:focus {outline: 2px solid #ddd;}
+  
+  .dropdown {
+      position: relative;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 180px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  .button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
