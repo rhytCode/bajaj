@@ -19,8 +19,7 @@
 
         <div class="orangeBox">
             <!-- Find better way to link the files (a href or button with href ?) -->
-            <!-- <a href="file:///Users/lizk/Desktop/safebodaFrontend/riderRegform/riderReg.html" class="btn btn-primary btn-lg btn-block" role="button"> Register A Rider</a> -->
-            
+            <!-- <a href="/frontend/riderRegform/riderReg.html" class="btn btn-primary btn-lg btn-block" role="button"> Register A Rider</a> -->
             <button class="btn btn-secondary btn-lg btn-block" id="linkToReg" 
             onclick="window.location.href = 'frontend/riderRegform/riderReg.html';"> Register a Rider </button>
 
@@ -33,14 +32,21 @@
 
             <div class="collapse" id="collapseExample">
                 <form class="card card-body">
-                    <input class="form-control" type="text" placeholder="name"/><br>
-                    <input class="form-control" type="Password" placeholder="password"/><br>
-                    <input class="form-control" type="text" placeholder="role"/><br>
-                        <div class="form-check mb-2">
+                    <input class="form-control" type="text" placeholder="Username"/><br>
+                    <input class="form-control" type="Password" placeholder="Password"/><br>
+                    <label for="role"><b>Select your role</b></label>
+                        <select class="form-control" id="role">
+                            <option>staff</option>
+                            <option>admin</option>
+                        </select><br>
+                    <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" id="autoSizingCheck">
                         <label class="form-check-label" for="autoSizingCheck"> Remember me </label>
-                        </div>
-                     <button class="btn btn-secondary" type="submit" value="Submit" id="loginBtn"> Login </button>
+                    </div>
+                        <button class="btn btn-secondary" type="submit" value="Submit" id="loginBtn"
+                        onclick="window.location.href = 'frontend/dashboard/index.html';">
+                        Login 
+                        </button>
                  </form>
             </div>
         </div>

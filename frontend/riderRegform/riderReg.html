@@ -19,7 +19,7 @@
           
             <div class= "navigate">
               <a href="/frontend/riderList/riderList.html" class="btn btn-secondary" role="button"> View Riders List</a>
-              <a href="#" class="btn btn-secondary"> Dashboard </a>
+              <a href="/frontend/dashboard/index.html" class="btn btn-secondary"> Dashboard </a>
             </div>
           
         </div>
@@ -51,7 +51,8 @@
                   </div>
 
                 <div class="submitBtn">
-                  <button type="submit" class="btn btn-primary btn-lg btn-block"> Submit </button>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block"
+                  onclick="myFunction()"> Submit </button>
                 </div>
           </form>
 
@@ -61,6 +62,11 @@
   </div>
 
     <script src = "riderReg.js"></script>
+    <script>
+      function myFunction() {
+        alert("Rider successfuly registerd!");
+      }
+      </script>
 
 </body>
 </html>
