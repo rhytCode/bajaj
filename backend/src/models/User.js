@@ -12,7 +12,12 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    password:{
+    username:{
+        type: String,
+        required: true,
+        unique: true
+    },
+        password:{
         type: String,
         required: true,
         minlength: 8,
@@ -34,8 +39,8 @@ userSchema.pre("save", async function(next){
    next(); 
 });
 
-userSchema.statics.findByCredentials = async (email,password) =>{
-    const user = await User.findOne({email});
+userSchema.statics.findByCredentials = async (username,password) =>{
+    const user = await User.findOne({username});
     if (!user){
         return {error: "Invalid Login credetials."};
     }
@@ -48,7 +53,7 @@ userSchema.statics.findByCredentials = async (email,password) =>{
 userSchema.methods.generateAuthToken = async function(){
     const user = this;
     const token = jwt.sign(
-        {id: user._id, email: user.email,role:user.role}, "teamBAJAJ");
+        {id: user._id, username: user.username,role:user.role}, "teamBAJAJ");
     return token;
 }   
 

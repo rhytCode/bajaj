@@ -20,8 +20,8 @@ res.status(400).send({error});
 
 //Login User
 router.post("/users/login", async (req,res) => {
-    const {email,password} = req.body;
-    const user = await User.findByCredentials(email,password);
+    const {username,password} = req.body;
+    const user = await User.findByCredentials(username,password);
     if (user.error) {
          return res.status(400).send({error: user.error});
     }
@@ -29,10 +29,6 @@ router.post("/users/login", async (req,res) => {
     res.status(201).send({message:"Logged in successfully!",user, token})
 
 });
-
-// Comment from Liz - Should we added username & staffId to router.post function and remove email as part of login variables needed ?
-//     eg. const {username, staffId, password} = req.body;
-//     const user = await User.findByCredentials(username, staffId, password);
 
 
 // view user profile
