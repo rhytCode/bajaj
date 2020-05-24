@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Download Reports Page</title>
+        <title> Dashboard </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./Dashboard.css">
+        <link rel="stylesheet" href="./dashboard.css">
     </head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -17,7 +17,9 @@
   </div>
 
   </div>  
-  <div class="logout"><button class="button">logout</button></div>
+  <div class="logoutBtn">
+    <a href="../loginPage/login.html" class="btn btn-secondary" role="button"> Logout </a>
+  </div>
 </div>
 <div class="side1">
 <div class="pie"><div id="piechart"></div>
@@ -50,8 +52,11 @@ function drawChart() {
 </script></div>
 </div>
 <div class="side2"><div  class="r">
-    <button type="button" class="btn btn-secondary btn-round">Register a Rider</button><br><br>
-    <button type="button" class="btn btn-secondary btn-round">view Rider Status</button><br><br>
+    <a href="../riderRegform/riderReg.html" class="btn btn-secondary btn-round" role="button"> Register a Rider </a><br><br>
+    <a href="../riderList/riderList.html" class="btn btn-secondary btn-round" role="button"> View Rider List </a><br><br>
+    <!-- <button type="button" class="btn btn-secondary btn-round">Register a Rider</button><br><br> -->
+    <!-- <button type="button" class="btn btn-secondary btn-round">View Rider List</button><br><br> -->
+    
     <div><button type="button" class="btn btn-secondary btn-round">total riders in the system</button> 
         <div class="search">
         <div class="sd">Date:<br>
