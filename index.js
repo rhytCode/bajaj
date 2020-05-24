@@ -1,7 +1,7 @@
 const  express = require ("express");
 const cors = require("cors");
-const userRouter = require("./routes/userRouters");
-require("./config/database");
+const userRouter = require("./backend/src/routes/userRouters");
+require("./backend/src/config/database");
 
 const port = process.env.PORT || 4000;
 
@@ -19,4 +19,3 @@ app.get('/', (req,res) =>{
 app.listen(port,() =>{
     console.log(`Server running on port ${port}`);
 });
-
