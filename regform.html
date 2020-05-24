@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rider registration form</title>
+    <link rel="stylesheet" 
+   href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="regform.css">
+</head>
+<body>
+    <form id="regForm" action="">
+        <div class="Logo">
+        <img src="SafeBodaLogo1.png" alt="logo"><br><br>
+    </div>
+    <div class= "returnButtons">
+        <button>Rider List</button>
+        <button>Dashboard</button><br><br>
+    </div>
+    <br><br><br><br><br>
+
+        <h1>Register Rider Details:</h1>
+        
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <p><input placeholder="First name..." oninput="this.className = ''"></p>
+          <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+          <p><input placeholder="Age..." oninput="this.className = ''"></p>
+          <p><input placeholder="National Identification Number..." oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">
+            <p><input placeholder="Boda Stage Address..." oninput="this.className = ''"></p>
+            <p><input placeholder="Recruitment Station/Address..." oninput="this.className = ''"></p>
+            <p><input placeholder="Referal Name..." oninput="this.className = ''"></p>
+            <p><input placeholder="Recruitment Date..." oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">
+          <p><input placeholder="dd" oninput="this.className = ''"></p>
+          <p><input placeholder="mm" oninput="this.className = ''"></p>
+          <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">
+            <p><input placeholder="Next of Kin" oninput="this.className = ''"></p>
+            <p><input placeholder="Next of Kin's contact" oninput="this.className = ''"></p>
+            <p><input placeholder="Email" oninput="this.className = ''"></p>
+            <p><input placeholder="Upload Photo" oninput="this.className = ''"></p>
+        </div>
+        
+        <div style="overflow:auto;">
+          <div style="float:right;" class="submit">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        
+        </form>
+        <script src="regform.js"></script>
+</body>
+</html>

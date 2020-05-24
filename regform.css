@@ -1,0 +1,95 @@
+body{
+    background-color: orange;
+
+}
+.Logo{
+    float: left;
+    width: 20%;
+}
+img{
+    width: 50%;
+}
+
+#regForm {
+    background-color: #ffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    position:center;
+    Z-index: 5;
+    max-width: 85%;
+    border-radius: 10px;
+   
+  }
+  .returnButtons{
+    float:right;
+    width: 50%;
+    height:100px;
+
+}
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    color: rgb(11, 34, 44);
+    border: 1px solid #aaaaaa;
+  }
+  .submit{
+width:30%
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  h1{
+    color: rgb(26, 67, 82);
+    margin: 0 auto;
+    font-family: "Robboto", sans-serif;
+
+}
+button{
+    width:30%;
+    background-color: orange;
+    color: #ffff;
+    font-family: "Robboto", sans-serif;
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+button:hover, button:active{
+    background: rgb(77, 95, 99);
+}
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #4CAF50;
+  }
