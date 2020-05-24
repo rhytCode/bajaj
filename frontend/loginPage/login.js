@@ -1,8 +1,8 @@
-document.getElementById('loginBtn').addEventListener('submit', signinUser)
+document.getElementById('loginBtn').addEventListener('submit', loginUser)
 const users_url= 'localhost:4000/users';
 
 const login_url= 'localhost:4000/users/login';
-localStorage.setItem('teamBAJAJ', data.token)
+// localStorage.setItem('teamBAJAJ', data.token)
 
 function loginUser(event) {
     event.preventDefault()
@@ -17,16 +17,17 @@ function loginUser(event) {
     .then ((response) => response.json())
     .then((data) => {
         if(username === "liz" && password === "app123456"){
-            localStorage.setItem('admin_token', data.token)
+            // localStorage.setItem('admin_token', data.token)
             window.location.replace('../dashboard/dashboard.html')
             alert("You have logged in succesfully as admin");
-        }
-        else if(data.message == "You have succesfully logged in"){
-            alert(data.message)
-            localStorage.setItem('token', data.token)
-            localStorage.setItem('username', username)
+        
+        // }else if(data.message == "You have succesfully logged in"){
+        //     alert(data.message)
+        //     // localStorage.setItem('token', data.token)
+        //     localStorage.setItem('username', username)
 
-            window.location.replace('../dashboard/dashboard.html')
+        //     window.location.replace('../dashboard/dashboard.html')
+        
         }
         else{
             alert(data.error);
