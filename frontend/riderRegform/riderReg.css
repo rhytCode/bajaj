@@ -1,56 +1,27 @@
-/* body {
-    background-color: rgba(255, 136, 0, 0.794);
-}
-
-.container {
-    background-color: #ffff;
-    position:center;
-    Z-index: 5;
-    max-width: 85%;
-    margin: 30px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-    border-radius: 5px;
-    height: 90%;
-}
-img {
-    float: left;
-    max-width: 80%;
-} */
-
-body{
+body {
     background-color:rgba(255, 136, 0, 0.911);
 }
+
 .marginBox {
     width: 1200px;
     height: 800px;
     padding: 50px;
     margin: 0 auto;
 }
+
 .registrationForm{
     background-color: white;
-    background-position: center;
+    background-position: center center;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    
-    
-    /* background-color: #ffff;
-    position:center;
-    Z-index: 5;
-    max-width: 85%;
-    margin: 30px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-    border-radius: 20px;
-    height: 90%; */
+    margin-bottom: 60px;
+}
 
+.form-group input {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .navigate a {
@@ -65,74 +36,12 @@ body{
     font-weight: bold;
 }
 
-.nextBtn button {
-    background:rgba(255, 136, 0, 0.911);
-}
+.navigate {
+    width: 80%;}
 
-.navigate{
+.submitBtn button {
+    background:rgba(24, 72, 87, 1);
     width: 80%;
-    /* margin-bottom: 50px; */
-}
-input{
-    width:85%;
-    padding: 25px;
-    margin-right:50px;
-    position:center;
-    color: rgb(11, 34, 44);
-    border-color:  rgb(136, 179, 199);
-    font-size: 15px;
-}
-::placeholder{
-    color: rgb(11, 34, 44);
-    font-size: 15px;
-    font-weight: bold;
-}
-.returnButtons{
-    float:right;
-    width: 400px;
-    height:100px;
-}
-h1{
-    color: rgb(26, 67, 82);
-    margin: 0 auto;
-    font-family: "Robboto", sans-serif;
-
-}
-button{
-    width:30%;
-    background-color: orange;
-    color: #ffff;
-    font-family: "Robboto", sans-serif;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 15px;
-    border-radius: 10px;
-    text-decoration-color: rgb(240, 172, 26);
-    cursor: pointer;
-
-}
-
-
-button.Nextpage{
-    color:#ffff;
-    background-color: rgb(26, 67, 82);
-    padding: 20px;
-    width:30%;
-     margin-right: 5px;
-    margin-left: 5px;
-}
-button.Nextpage:hover, button.Nextpage:active{
-    background: rgb(3, 81, 95);
-}
-button.previouspage{
-color:#ffff;
-    background-color: rgb(26, 67, 82);
-    padding: 20px;
-    width:30%;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-button.previouspage:hover, button.previouspage:active{
-    background: rgb(3, 81, 95);
-
-}
+    margin-top: 20px;
+    margin-left: 110px;
+};
