@@ -32,6 +32,10 @@ body {
     font-family: "Robboto", sans-serif;
     font-weight: bold;
 }
+.detail-list a {
+    background:rgba(24, 72, 87, 1);
+    margin-left: 10px;
+}
 
 .profile {
 padding: 30px;
