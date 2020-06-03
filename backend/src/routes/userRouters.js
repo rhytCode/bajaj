@@ -25,6 +25,8 @@ router.post("/users/login", async (req,res) => {
     if (user.error) {
          return res.status(400).send({error: user.error});
     }
+ //shouldnt we add an else { } here ??
+    
     const token = await user.generateAuthToken()
     res.status(201).send({message:"Logged in successfully!",user, token})
 
@@ -36,4 +38,4 @@ router.get("/users/profile", auth, (req,res)=>{
     .send(req.user);
 });
 
-module.exports = router;
+module.exports = router; //module.exports = userRouter ?

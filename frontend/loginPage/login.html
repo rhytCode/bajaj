@@ -19,11 +19,10 @@
 
         <div class="orangeBox">
             
-            <a href="../riderRegform/regform.html" class="btn btn-secondary btn-lg btn-block" role="button" id="linkToReg"> Register A Rider </a>
+            <!-- <a href="../riderRegform/regform.html" class="btn btn-secondary btn-lg btn-block" role="button" id="linkToReg"> Register A Rider </a> -->
             
             <!-- Activate when testing login.js & backend code -->
-            <!-- <button class="btn btn-secondary btn-lg btn-block" id="linkToReg">
-            <a href="../riderRegform/riderReg.html"> Register a Rider </a> </button> -->
+            <button class="btn btn-secondary btn-lg btn-block" id="linkToReg" onclick="myFunction()"> Register a Rider </button>
 
 
             <button class="btn btn-primary btn-lg btn-block" type="button" 
@@ -35,7 +34,7 @@
             <div class="collapse" id="collapseExample">
                 <form class="card card-body">
                     <input class="form-control" type="text" placeholder="Username" id="login_username"/><br>
-                    <input class="form-control" type="Password" placeholder="Password" id="psw"/><br>
+                    <input class="form-control" type="Password" placeholder="Password" id="pwd"/><br>
                     <label for="role"><b>Select your role</b></label>
                         <select class="form-control" id="role">
                             <option>staff</option>
@@ -45,19 +44,30 @@
                         <input class="form-check-input" type="checkbox" id="autoSizingCheck">
                         <label class="form-check-label" for="autoSizingCheck"> Remember me </label>
                     </div>
-                        <a href="../dashboard/dashboard.html" class="btn btn-secondary" role="button" id="loginBtn"> Login </a>
+
+                        <!-- <a href="../dashboard/dashboard.html" class="btn btn-secondary" role="button" id="loginBtn"> Login </a> -->
                         
                         <!-- Activate when testing login.js & backend code -->
                         <!-- <button class="btn btn-secondary" type="submit" id="loginBtn"
                         onclick="check(this.form)"> Login </button> -->
                         
+                        <button class="btn btn-secondary" type="submit" id="loginBtn"> Login </button>
                  </form>
             </div>
         </div>
     </div>
 
     <script src="./login.js"></script>
+
+    <!-- <script>
+        function login(){alert("testing login")}
+    </script> -->
     
+    <script>
+        function myFunction() {
+          alert("Function Coming Soon");
+        }
+        </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
